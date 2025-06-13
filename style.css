@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppis', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    color: white;
+    margin-left: 50px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #807A00;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px white;
+    transform: scale(1.05);
+    color: white;
+    transition: 0.5s;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 33px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #807A00;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 80px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #807A00;
+    transform: scale(1.05);
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+header h1 {
+    color: #807A00;
+    margin-left: 60px;
+}
+
+header nav.menu-desktop a:hover{
+    color: #807A00;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style: none;
+}
+
+
+.btn-abrir-menu i{
+    color: blueviolet;
+    font-size: 40px;
+    display: none;
+}
+
+.menu-mobile{
+    background-color: black;
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: blueviolet;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 5%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: blueviolet;
+    color: black;
+}
+
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+ 
+section.topo {
+    padding: 80px 4%;
+}
+
+section.topo .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo h1 {
+    padding-left: 50px;
+    width: 90%;
+    color: white;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.topo .txt-topo p {
+    padding-left: 50px;
+    width: 80%;
+    color:white;
+    font-size: 21px;
+    margin: 40px 0;
+    text-align: justify;
+}
+
+.topo .img-topo img {
+    border-radius: 60%;
+    max-width: 400px;
+    max-height: 300px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border: 5px solid #807A00;
+}
+
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+section.projetos {
+    padding: 80px 4%;
+}
+
+section.projetos .flex {
+    gap: 60px;
+}
+
+.projetos .projetos-box {
+    width: 30%;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    text-align: center;
+}
+
+.link {
+    color: #807A00;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.projetos .projetos-box p{
+    color:white;
+    font-size: 22px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projetos .projetos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #807A00;
+}
+
+.projetos .projetos-box i {
+    font-size: 70px;
+    color: #807A00;
+}
+
+.material-symbols-outlined {
+    font-size: 70px;
+    color: #807A00;
+}
+
+.projetos .projetos-box h3 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: white;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #807A00;
+    display: block;
+    
+}
+
+.sobre .txt-sobre p {
+    width: 90%;
+    color:white;
+    font-size: 20px;
+    margin: 40px 0;
+    text-align: justify;
+}
+
+.img-sobre img {
+    border: solid 3px #807A00;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    max-height: 600px;
+    border-radius: 20%;
+}
+
+.titulo span {
+    color: #807A00;
+}
+
+i {
+    color: white;
+}
+
+.sobre .txt-sobre .btn-redes button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #807A00;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+section.habilidades {
+    padding: 80px 4%;
+}
+
+section.habilidades .flex {
+    gap: 60px;
+}
+
+
+.habilidades .habilidades-box {
+    width: 30%;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    text-align: center;
+}
+
+.habilidades .habilidades-box p{
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.habilidades .habilidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #807A00;
+}
+
+.habilidades .habilidades-box i {
+    font-size: 70px;
+    color: blueviolet;
+}
+
+.habilidades .habilidades-box h3 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+/* Responsivo para telas menores (tablets e celulares) */
+@media screen and (max-width: 1024px) {
+  .topo .flex, .sobre .flex, .projetos .flex, .habilidades .flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .topo h1, .topo .txt-topo p {
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .img-topo img, .img-sobre img {
+    margin-left: 0;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  header h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .btn-contato button {
+    margin: 20px auto;
+    display: block;
+  }
+
+  .projetos .projetos-box, .habilidades .habilidades-box {
+    width: 80%;
+  }
+
+  header nav.menu-desktop {
+    display: none;
+  }
+
+  .btn-abrir-menu i {
+    display: block;
+  }
+}
+
+/* Responsivo para celulares menores */
+
+@media screen and (max-width: 600px) {
+    
+    header h1 {
+        margin-left: 80px;
+    }
+
+    section.topo {
+    padding: 20px 4%;
+}
+
+.btn-abrir-menu i{
+    color: #807A00;
+    font-size: 40px;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #807A00;
+    font-size: 30px;
+}
+
+  .topo h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+
+  .img-sobre img {
+    border: solid 3px #807A00;
+    padding: 10px;
+    max-width: 400px;
+    max-height: 600px;
+    border-radius: 20%;
+}
+
+.menu-mobile{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.projetos .projetos-box {
+    width: 80%;
+    color: white;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    text-align: center;
+}
+
+
+  .topo .txt-topo p, .sobre .txt-sobre p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .menu-mobile .btn-fechar i{
+    color: #807A00;
+    font-size: 30px;
+}
+
+  .menu-mobile nav ul li a:hover{
+    background-color: #807A00;
+    color: black;
+}
+
+  h2.titulo {
+    font-size: 28px;
+  }
+
+  .sobre .txt-sobre .btn-redes button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #807A00;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+  .sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+  .habilidades .habilidades-box h3,
+  .projetos .projetos-box h3 {
+    font-size: 24px;
+  }
+
+  .btn-contato button {
+    font-size: 16px;
+    padding: 8px 30px;
+  }
+
+  .material-symbols-outlined,
+  .habilidades .habilidades-box i,
+  .projetos .projetos-box i {
+    font-size: 50px;
+  }
+}
